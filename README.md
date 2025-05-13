@@ -10,7 +10,7 @@ Secure authentication module checking the validity of the identifier (C++ / Crow
 # Installing
 After installing all the dependencie :
 ````
-git clone https://github.com/AdamYv/Euronext_Surveillance
+git clone https://github.com/AdamYv/Euronext_Surveillance.git
 ````
 
 
