@@ -35,5 +35,8 @@ make
 ./Euronext_surveillance
 ````
 
+# Expected output 
+![image](https://github.com/user-attachments/assets/8eed190a-92e4-4dae-97b5-3d4812e45eaa)
+
 
 
