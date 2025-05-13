@@ -7,14 +7,33 @@ Secure authentication module checking the validity of the identifier (C++ / Crow
 - [Cmake](https://cmake.org/download/) 
 - [QT](https://www.qt.io/download-qt-installer-oss)
 
-# Installing
+# Install
 After installing all the dependencie :
 ````
 git clone https://github.com/AdamYv/Euronext_Surveillance.git
 ````
 
+# Compile
+The easiest way is to use clion , but you can try in the terminal like this :  
 
+*Generate the make file*
+````
+cmake  \  
+  -DCMAKE_BUILD_TYPE=Debug \
+  -DCROW_INCLUDE_DIR=../crow/include \
+  -DSQLITE3_INCLUDE_DIR=/usr/include \
+  -DSQLITE3_LIBRARY=/usr/lib64/libsqlite3.so
+````
 
+*Compile*
+````
+make
+````
+
+*Exec*
+````
+./Euronext_surveillance
+````
 
 
 
