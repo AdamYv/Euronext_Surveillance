@@ -1,0 +1,303 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Rapport de Performance Réseau</title>
+            <style>
+                body {
+                    font-family: 'Segoe UI', Arial, sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                    background-color: #f5f5f5;
+                    color: #333;
+                }
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    background-color: white;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                }
+                h1, h2, h3, h4 {
+                    color: #0050A4;
+                }
+                .metrics-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                    gap: 20px;
+                    margin: 20px 0;
+                }
+                .metric-card {
+                    background-color: #f9f9f9;
+                    border-radius: 8px;
+                    padding: 20px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+                }
+                .metric-title {
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    color: #0050A4;
+                }
+                .metric-value {
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin: 10px 0;
+                }
+                .metric-description {
+                    font-size: 14px;
+                    color: #666;
+                    margin-top: 10px;
+                }
+                .good {
+                    color: #28a745;
+                }
+                .warning {
+                    color: #ffc107;
+                }
+                .critical {
+                    color: #dc3545;
+                }
+                .neutral {
+                    color: #6c757d;
+                }
+                .trend-indicator {
+                    display: inline-block;
+                    margin-left: 5px;
+                }
+                .trend-up {
+                    color: #dc3545;
+                }
+                .trend-down {
+                    color: #28a745;
+                }
+                .trend-stable {
+                    color: #6c757d;
+                }
+                .chart-container {
+                    margin: 30px 0;
+                    text-align: center;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 20px 0;
+                }
+                th, td {
+                    padding: 10px 15px;
+                    text-align: left;
+                    border-bottom: 1px solid #ddd;
+                }
+                th {
+                    background-color: #f0f0f0;
+                }
+                tr:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+                .section {
+                    margin: 40px 0;
+                }
+                .recommendations {
+                    margin: 30px 0;
+                }
+                .recommendation-item {
+                    margin-bottom: 15px;
+                    padding-left: 20px;
+                    border-left: 4px solid #0050A4;
+                }
+                .footer {
+                    margin-top: 50px;
+                    padding-top: 20px;
+                    border-top: 1px solid #ddd;
+                    color: #666;
+                    font-size: 14px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Rapport de Performance Réseau</h1>
+                <p>Analyse complète des performances réseau du système de trading</p>
+                
+                <div class="section">
+                    <h2>Résumé des Performances</h2>
+                    
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-title">Latence Moyenne</div>
+                            <div class="metric-value status-warning">
+                                4.04 ms
+                                <span class="trend-indicator trend-warning">(en hausse)</span>
+                            </div>
+                            <div class="metric-description">
+                                La latence moyenne mesurée sur les 30 derniers jours.
+                                <br>Seuil critique: 5.0 ms
+                            </div>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <div class="metric-title">Conformité de Latence</div>
+                            <div class="metric-value critical">
+                                83.3%
+                            </div>
+                            <div class="metric-description">
+                                Pourcentage du temps où la latence est sous le seuil critique.
+                                <br>Objectif: >95%
+                            </div>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <div class="metric-title">Débit Moyen Descendant</div>
+                            <div class="metric-value good">
+                                97.7 Mbps
+                            </div>
+                            <div class="metric-description">
+                                Le débit descendant moyen mesuré sur les 30 derniers jours.
+                                <br>Objectif: >50 Mbps
+                            </div>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <div class="metric-title">Débit Moyen Montant</div>
+                            <div class="metric-value good">
+                                44.7 Mbps
+                            </div>
+                            <div class="metric-description">
+                                Le débit montant moyen mesuré sur les 30 derniers jours.
+                                <br>Objectif: >30 Mbps
+                            </div>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <div class="metric-title">Charge Serveur Moyenne</div>
+                            <div class="metric-value status-good">
+                                43.0%
+                            </div>
+                            <div class="metric-description">
+                                La charge moyenne du serveur sur les 30 derniers jours.
+                                <br>Seuil d'alerte: 80%
+                            </div>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <div class="metric-title">Alertes Critiques</div>
+                            <div class="metric-value status-critical">
+                                5
+                            </div>
+                            <div class="metric-description">
+                                Nombre d'alertes critiques détectées au cours des dernières 24 heures.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Visualisation des Performances</h2>
+                    
+                    <div class="chart-container">
+                        <img src="latest_network_status.png" alt="Tendances récentes du réseau" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Statistiques Détaillées</h2>
+                    
+                    <h3>Statistiques de Latence</h3>
+                    <table>
+                        <tr>
+                            <th>Métrique</th>
+                            <th>Valeur</th>
+                            <th>Statut</th>
+                        </tr>
+                        <tr>
+                            <td>Minimum</td>
+                            <td>2.02 ms</td>
+                            <td class="good">Excellent</td>
+                        </tr>
+                        <tr>
+                            <td>Maximum</td>
+                            <td>10.00 ms</td>
+                            <td class="status-critical">
+                                Critique
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Moyenne</td>
+                            <td>4.04 ms</td>
+                            <td class="status-warning">
+                                Acceptable
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Écart type</td>
+                            <td>1.77 ms</td>
+                            <td class="warning">
+                                Variable
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <h3>Statistiques de Débit</h3>
+                    <table>
+                        <tr>
+                            <th>Métrique</th>
+                            <th>Montant (Mbps)</th>
+                            <th>Descendant (Mbps)</th>
+                        </tr>
+                        <tr>
+                            <td>Minimum</td>
+                            <td>39.0</td>
+                            <td>88.9</td>
+                        </tr>
+                        <tr>
+                            <td>Maximum</td>
+                            <td>49.9</td>
+                            <td>107.6</td>
+                        </tr>
+                        <tr>
+                            <td>Moyenne</td>
+                            <td>44.7</td>
+                            <td>97.7</td>
+                        </tr>
+                        <tr>
+                            <td>Écart type</td>
+                            <td>2.7</td>
+                            <td>4.7</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="recommendations">
+                    <h2>Recommandations</h2>
+                    
+                    <div class="recommendation-item">
+                        <h4>Surveillance de la Latence</h4>
+                        <p>Continuer à surveiller quotidiennement la latence pour garantir qu'elle reste sous le seuil critique de 5.0 ms.</p>
+                    </div>
+                    
+                    <div class="recommendation-item">
+                        <h4>Audit Réseau</h4>
+                        <p>Planifier un audit du réseau si la latence dépasse 5.0 ms plus de 2 jours consécutifs.</p>
+                    </div>
+                    
+                    <div class="recommendation-item">
+                        <h4>Bande Passante</h4>
+                        <p>Envisager une mise à niveau de la bande passante montante si le débit moyen descend sous 40 Mbps pendant plus d'une semaine.</p>
+                    </div>
+                    
+                    <div class="recommendation-item">
+                        <h4>Plan de Continuité</h4>
+                        <p>Tester régulièrement le plan de continuité d'activité avec la migration vers le site de secours pour valider les temps de bascule.</p>
+                    </div>
+                </div>
+                
+                <div class="footer">
+                    <p>Ce rapport a été généré automatiquement le 2025-07-06 à 16:07:07.</p>
+                    <p>Pour toute question ou assistance, contactez l'équipe d'infrastructure réseau.</p>
+                </div>
+            </div>
+        </body>
+        </html>
+        

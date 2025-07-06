@@ -1,0 +1,28 @@
+{
+    "validation_date": "2025-07-06 15:51:05.535397",
+    "requirements": {
+        "throughput_test": true,
+        "latency": true,
+        "proxy": true,
+        "vpn": true,
+        "restart_connection": true,
+        "dropdown_menu": true,
+        "session_timeout": true,
+        "availability_24_7": true,
+        "low_latency": true,
+        "rto_rpo": true
+    },
+    "all_requirements_met": true,
+    "files_generated": [
+        {
+            "name": "network_interface.html",
+            "path": "/workspace/openai_files/cc1d2f838445/43ec1472a005/.work_ee9a4648-cbdf-45df-9f8d-0264c0843ab0/network_interface.html",
+            "description": "Interface r\u00e9seau compl\u00e8te"
+        },
+        {
+            "name": "preview.html",
+            "path": "/workspace/openai_files/cc1d2f838445/43ec1472a005/.work_ee9a4648-cbdf-45df-9f8d-0264c0843ab0/preview.html",
+            "description": "Page de pr\u00e9visualisation interactive"
+        }
+    ]
+}
