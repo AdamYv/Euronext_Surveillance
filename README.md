@@ -1,6 +1,14 @@
 # Euronext_Surveillance
 
 Secure authentication module checking the validity of the identifier (C++ / Crow), granting the role and managing access with SQLite
+The actual projet as a lot of issue you could found a preview of our futur improvement :
+
+
+<video width="320" height="240" controls>
+  <source src="./Screen-record-of-our-Idee.mp4" type="video/mp4">
+  Votre navigateur ne supporte pas la balise vidéo.
+</video>
+
 
 ## Dependence & link
 - [GCC](https://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download)
