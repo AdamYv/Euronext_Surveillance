@@ -40,3 +40,11 @@ make
 
 
 
+Module : Interfaces & Intégrations
+
+Ce module est responsable de l'interface utilisateur (UI) de surveillance et de la gestion des API.
+
+### Fonctionnalités prévues :
+- Dashboard d'administration
+- Visualisation des données de marché (Graphiques Qt)
+- Documentation technique des API
